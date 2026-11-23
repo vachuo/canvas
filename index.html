@@ -865,7 +865,6 @@
   </div>
   <div class="wrap fbot">
     <span>© {{year}} Vachuo, Inc.</span>
-    <span>{{t.legal}}</span>
     <a class="alpha" href="landing.html">{{t.alpha}}</a>
   </div>
 </footer>
@@ -944,8 +943,7 @@ class Component extends DCLogic {
         c1k: 'For learners', c1t: 'A companion that asks more than it tells', c1d: 'Socrates helps learners follow their own questions, at their own pace, on a learning map they can see and challenge.',
         c2k: 'For families', c2t: 'A parent who approves what matters', c2d: 'Plans, people and anything public, paid or in person wait for a guardian’s yes. The record of learning belongs to the learner.',
         c3k: 'For guides and schools', c3t: 'Time handed back to people', c3d: 'Socrates suggests marks and guides decide what counts. Vachuo Studio and the school console take care of the rest.',
-        learnersAlt: 'Illustrated learners from around the world', general: 'General', partners: 'Partnerships', privacy: 'Privacy', followT: 'Follow Vachuo',
-        legal: 'Vachuo™ is a trademark of Vachuo, Inc., a Delaware C corporation with a subsidiary in Kenya.', alpha: 'Alpha Testing'
+        learnersAlt: 'Illustrated learners from around the world', general: 'General', partners: 'Partnerships', privacy: 'Privacy', followT: 'Follow Vachuo', alpha: 'Alpha Testing'
       },
       sw: {
         title: 'Vachuo · Inakuja hivi karibuni', h1a: 'Inakuja', h1b: 'hivi karibuni', slogan: 'Heshimu kila kipaji!', tagline: 'Shule moja inayomfuata mwanafunzi.',
@@ -959,8 +957,7 @@ class Component extends DCLogic {
         c1k: 'Kwa wanafunzi', c1t: 'Mwenzi anayeuliza zaidi kuliko anavyoeleza', c1d: 'Socrates huwasaidia wanafunzi kufuata maswali yao wenyewe, kwa kasi yao, kwenye ramani ya kujifunza wanayoweza kuiona na kuihoji.',
         c2k: 'Kwa familia', c2t: 'Mzazi anayeidhinisha yaliyo muhimu', c2d: 'Mipango, watu na chochote cha hadharani, cha kulipia au cha ana kwa ana husubiri ridhaa ya mlezi. Kumbukumbu ya kujifunza ni mali ya mwanafunzi.',
         c3k: 'Kwa waelekezi na shule', c3t: 'Muda unarudishwa kwa watu', c3d: 'Socrates hupendekeza alama na waelekezi huamua kinachohesabika. Vachuo Studio na dashibodi ya shule hushughulikia mengine.',
-        learnersAlt: 'Wanafunzi waliochorwa kutoka kote duniani', general: 'Jumla', partners: 'Ushirikiano', privacy: 'Faragha', followT: 'Fuata Vachuo',
-        legal: 'Vachuo™ ni chapa ya biashara ya Vachuo, Inc., kampuni ya Delaware (C corporation) yenye kampuni tanzu nchini Kenya.', alpha: 'Majaribio ya Alpha'
+        learnersAlt: 'Wanafunzi waliochorwa kutoka kote duniani', general: 'Jumla', partners: 'Ushirikiano', privacy: 'Faragha', followT: 'Fuata Vachuo', alpha: 'Majaribio ya Alpha'
       }
     };
     const pick = this.props.lang === 'en' || this.props.lang === 'sw' ? this.props.lang : (this._lang || 'en');

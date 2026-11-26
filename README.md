@@ -22,8 +22,8 @@ Then open http://localhost:5180.
 For now the "Coming soon" page is the home page (`index.html`) and the thesis landing
 page is `landing.html`. Both are boards on the design canvas: the Coming soon page is
 `ComingSoon.dc.html`, next to the landing page. The canvas still builds the landing page as
-`index.html`, so after every rebuild run `python tools/site_edits.py`: it moves the landing
-page to `landing.html`, moves the rebuilt Coming soon page to `index.html` and points every
+`index.html`, so every rebuild ends with `tools/site_edits.py` (the converter runs it): it
+moves the landing page to `landing.html`, moves the rebuilt Coming soon page to `index.html` and points every
 link at `landing.html`. To change the Coming soon page, edit its board on the canvas and
 rebuild. `tools/coming-soon.html` is an older hand-made copy, used only if a rebuild has no
 Coming soon page. To end the arrangement, see the notes at the top of
@@ -99,6 +99,20 @@ question is sent. On the design canvas the panel shows saved example results ins
 | Component | Curriculum comparison | `compare.html` |
 | Component | Approvals | `approvals.html` |
 | Inside Vachuo | The loop | `loop.html` |
+
+## Rebuilding from the canvas
+
+The pages are generated from the boards on the Claude Design canvas by `tools/convert.py`.
+Download the canvas's `project/` folder (every `<Name>.dc.html` board), and next to it each
+asset the boards use, saved as `<id>.<ext>`. Then run:
+
+```
+python -I tools/convert.py <download>/project .
+```
+
+It replaces every page in the site root and refreshes `assets/img`, `assets/files` and
+`assets/css/theme.css`, then runs `tools/site_edits.py`. A new board needs a name in the
+`PAGES` table at the top of the converter; `Blog-*` boards are picked up automatically.
 
 ## How a page is built
 

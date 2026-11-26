@@ -342,6 +342,14 @@ class Component extends DCLogic {
       industry: ['#ECECE6', '#3F444C']
     };
     const raw = [
+      ['curricula', 'World curricula', 'learn', 14, 'The World’s Major Curricula: Compare, Contrast, a SWOT for Each, and How to Choose', 'IB, Cambridge, American, English, French, Chinese, Indian, Kenyan, West African, Singaporean and Finnish: what each curriculum asks of a child, what it does well, where it falls short, and how to choose.'],
+      ['philosophies', 'Educational philosophies', 'industry', 14, 'National or International, Public or Private, Elite or Ivy: Educational Philosophies Compared, and the World’s Top 100 Universities', 'The labels families use for schools and universities mix up very different questions. Seven ways to pull them apart, seven teaching philosophies, well-known institutions as examples, and a run-down of the top 100 universities.'],
+      ['unicorn-founders', 'Unicorn founders', 'work', 12, 'The Founder Profile: What Y Combinator Looks For, Where Unicorn Founders Studied, and the Real Odds', 'The stereotype is a twenty-year-old Stanford dropout. The data describe someone who builds out of habit, has a co-founder, studied something technical, often has an advanced degree, and is frequently older than you think.'],
+      ['public-systems', 'Public education systems', 'industry', 12, 'The Good, the Bad and the Ugly: Public Education in Kenya, Nigeria, Ghana, the US, the UK, China and India', 'Seven public school systems side by side: what each does well, where each falls short, the parts that are hard to look at, and one fix that would help most.'],
+      ['affordable-education', 'Affording a great education', 'safe', 12, 'A World-Class Education Without Lifetime Debt: The Best Routes for a Middle-Class Family in Africa, the US, the UK, China and India', 'How a working family can buy the learning that matters without mortgaging its future: what to spend on, what to skip, the free money most families miss, and the debt to avoid, country by country.'],
+      ['homeschool-kenya', 'Homeschooling in Kenya', 'learn', 10, 'Homeschooling in Kenya and Across Africa: The Law, the Families, Dual Schooling and Tuition', 'Why more Kenyan families are teaching at home, what the law says and does not say, why dual schooling is the safest route for now, what the holiday tuition ban means, and how South Africa and Nigeria compare.'],
+      ['homeschool-world', 'Homeschooling worldwide', 'learn', 11, 'Homeschooling, Dual Schooling and Tutoring in the US, UK, Nigeria, India and China: Where Things Stand', 'Five countries, five very different answers to the same question: who may educate a child outside school, and how much learning now happens in the shadow system of tutors and coaching centres.'],
+      ['homeschool-us', 'Homeschooling in the US', 'learn', 10, 'Homeschooling, Dual Schooling and Tutoring in the United States, State by State', 'From Texas, where parents need not tell anyone, to Pennsylvania, where an evaluator signs off every year: a map of the rules, the states that let homeschoolers play school sports or pay them to homeschool, and the hybrid options in between.'],
       ['founders', 'Founders and universities', 'work', 12, 'How Universities Should Prepare Founders: Teach Building, Then Get Out of the Way', 'Paul Graham argues that universities should teach students to build, show them founders a few years older and give them weeks with nothing due. We agree, and think the habit starts long before eighteen.'],
       ['seven-lessons', 'The hidden curriculum', 'safe', 8, 'What School Teaches Without Meaning To: Gatto’s Seven Lessons, and How to Spot Them in an App', 'A New York teacher of the year listed seven lessons he taught every day, whatever the subject. They make a sharp checklist for any classroom, and for any learning app.'],
       ['every-genius', 'Equality of minds', 'learn', 8, 'Honour Every Genius: Gatto, Jacotot and the Equality of Minds', 'A teacher who knew no Flemish taught Flemish students French from one book. Two centuries later, his story is the strongest argument we know that every mind is capable.'],
@@ -379,6 +387,14 @@ class Component extends DCLogic {
     const band = { learn: '#1D4ED8', work: '#0D9488', safe: '#F9A826', industry: '#172F73' };
     const B = (id) => 'assets/img/' + id + '.svg';
     const art = {
+      'homeschool-kenya': B('46e5e779174aa0ddfd4f477b9c75cf42'),
+      'homeschool-us': B('d42b6aeb08200a8796692a2ce1cd239f'),
+      'homeschool-world': B('cc13f9d919b0933cc82b960722e0d690'),
+      'affordable-education': B('734c48226a9d32aaeebc02194bddd245'),
+      'public-systems': B('65a0f4b355f066cff6c2b1eae9c72c33'),
+      'unicorn-founders': B('e1b79eb4952f14718c70fb2b72622cc1'),
+      'philosophies': B('028366707734272954ecc6309a373201'),
+      'curricula': B('d42b6aeb08200a8796692a2ce1cd239f'),
       'founders': B('028366707734272954ecc6309a373201'),
       'seven-lessons': B('cac9841562397b7ca613a7ffcdd03071'),
       'every-genius': B('cc13f9d919b0933cc82b960722e0d690'),

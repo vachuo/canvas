@@ -52,7 +52,7 @@ question is sent. On the design canvas the panel shows saved example results ins
 | Website | Sign in | `sign-in.html` |
 | Website | Blog (Vachuo Journal) | `blog.html` |
 | Website | Newsroom | `newsroom.html` |
-| Journal | Forty-two essays | `blog-<topic>.html` |
+| Journal | Forty-three essays | `blog-<topic>.html` |
 | Learner | Today | `today.html` |
 | Learner | Tutor session | `session.html` |
 | Learner | My map | `map.html` |

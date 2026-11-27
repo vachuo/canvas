@@ -153,7 +153,7 @@ html.rv-on [data-rv]:not([data-shown]){opacity:0;transform:translateY(28px)}
 <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
 <h2 id="eeo-title" style="margin: 0; font-size: clamp(28px, 3vw, 40px); line-height: 1.08; font-weight: 600">Every learner, every background, every continent.</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3F444C">Vachuo is an equal opportunity employer. We hire on skill and evidence, not pedigree, and we welcome people of every race, colour, religion, sex, gender identity, sexual orientation, age, national origin, disability and veteran status. If you need an accommodation at any stage, tell us and we will arrange it.</p>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3F444C">Roles that involve working with children require identity verification and background checks where the law allows. Pay ranges for US roles follow California’s pay transparency law; final offers depend on location and experience.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3F444C">Roles that involve working with children require identity verification and background checks where the law allows. Pay for every role is shared early, before your first interview; final offers depend on location and experience.</p>
 </div>
 <img src="assets/img/80b06694a121b52e5cf0510bfda36f44.svg" alt="Illustrated learners from all seven continents standing together" style="flex: 1 1 420px; min-width: 0; width: 100%; height: auto">
 </section>
@@ -419,18 +419,18 @@ class Component extends DCLogic {
       Engineering: ['#E4ECFD', '#1E40AF'], Learning: ['#DDF4F1', '#115E59'], Design: ['#FEF1D9', '#92400E'],
       Safety: ['#FEF1D9', '#92400E'], Growth: ['#ECECE6', '#3F444C'], 'Guides & partnerships': ['#DDF4F1', '#115E59']
     };
-    const US = 'The base salary range for this full-time role in California is shown above. Final offers depend on location, skills and experience, and include equity and benefits.';
+    const US = 'Pay for US roles is set against market data and shared before your first interview. Final offers depend on location, skills and experience, and include equity and benefits.';
     const KE = 'Pay for Nairobi roles is set against local market data and shared before your first interview. Includes equity and benefits.';
     const all = [
-      { id: 'ml', team: 'Engineering', title: 'Founding Machine Learning Engineer, Learner Modelling', loc: 'Palo Alto', where: 'Palo Alto, CA · Hybrid', type: 'Full-time', pay: '$185k–$230k · 0.6–1.2%', note: US,
+      { id: 'ml', team: 'Engineering', title: 'Founding Machine Learning Engineer, Learner Modelling', loc: 'Palo Alto', where: 'Palo Alto, CA · Hybrid', type: 'Full-time', pay: 'USD range shared early · 0.6–1.2%', note: US,
         about: 'Own the learner model at the heart of the loop: the system that estimates what each child knows, predicts what will help next, and explains why.',
         do: ['Build knowledge-tracing and misconception models from interaction data', 'Design evaluation that measures learning gains, not engagement', 'Ship models that run cheaply on low-end Android phones', 'Partner with learning scientists on every experiment'],
         bring: ['4+ years shipping ML systems to production', 'Depth in probabilistic modelling, recommender or sequential models', 'Strong Python and a habit of rigorous evaluation', 'Care for privacy-preserving methods'] },
-      { id: 'fs', team: 'Engineering', title: 'Senior Full-Stack Engineer, Learner Experience', loc: 'Remote (US)', where: 'Palo Alto, CA or Remote (US)', type: 'Full-time', pay: '$165k–$205k · 0.25–0.6%', note: US,
+      { id: 'fs', team: 'Engineering', title: 'Senior Full-Stack Engineer, Learner Experience', loc: 'Remote (US)', where: 'Palo Alto, CA or Remote (US)', type: 'Full-time', pay: 'USD range shared early · 0.25–0.6%', note: US,
         about: 'Build the screens a child, a parent and a guide use every day, so that the loop feels calm, fast and humane.',
         do: ['Build the learner, Parent Copilot and guide apps end to end', 'Make every flow accessible and fast on slow connections', 'Own offline sync for lessons and the Portfolio', 'Instrument features so we learn what actually helps'],
         bring: ['5+ years building web or mobile products', 'TypeScript, React and a modern backend', 'Taste for clear, accessible interfaces', 'Comfort working directly with families and guides'] },
-      { id: 'safety-eng', team: 'Engineering', title: 'AI Safety and Evaluation Engineer', loc: 'Palo Alto', where: 'Palo Alto, CA · Hybrid', type: 'Full-time', pay: '$175k–$220k · 0.3–0.7%', note: US,
+      { id: 'safety-eng', team: 'Engineering', title: 'AI Safety and Evaluation Engineer', loc: 'Palo Alto', where: 'Palo Alto, CA · Hybrid', type: 'Full-time', pay: 'USD range shared early · 0.3–0.7%', note: US,
         about: 'Make sure our AI tutor is accurate, kind and safe for children, before launch and every day after.',
         do: ['Build red-team suites for child safety, accuracy and bias', 'Design guardrails that give hints before answers', 'Run continuous evaluation and incident reviews', 'Publish what we learn in our safety reports'],
         bring: ['3+ years in ML engineering or evaluation', 'Experience testing language models', 'A rigorous, sceptical mindset', 'Interest in child development and online safety'] },
@@ -438,23 +438,23 @@ class Component extends DCLogic {
         about: 'Bring Vachuo to learners on low-cost phones and patchy networks across East Africa.',
         do: ['Build our Android learner app in Kotlin', 'Make lessons, practice and records work fully offline', 'Optimise for memory, storage and data costs', 'Test with families and learning hubs in Kenya'],
         bring: ['3+ years building Android apps', 'Experience with offline sync and local storage', 'Pride in performance on low-end devices', 'Kiswahili is a plus'] },
-      { id: 'ls', team: 'Learning', title: 'Founding Learning Scientist', loc: 'Remote (US)', where: 'Palo Alto, CA or Remote (US)', type: 'Full-time', pay: '$150k–$190k · 0.3–0.7%', note: US,
+      { id: 'ls', team: 'Learning', title: 'Founding Learning Scientist', loc: 'Remote (US)', where: 'Palo Alto, CA or Remote (US)', type: 'Full-time', pay: 'USD range shared early · 0.3–0.7%', note: US,
         about: 'Turn the best evidence on how people learn into product decisions, and run the studies that test whether Vachuo works.',
         do: ['Design the pedagogy graph: retrieval, spacing, worked examples, feedback', 'Run A/B tests and pre-registered efficacy studies', 'Partner with universities on independent evaluations', 'Write for the Vachuo Journal'],
         bring: ['PhD or equivalent in learning sciences, psychology or education', 'Experience running field experiments', 'Fluency with causal inference', 'Ability to explain research to engineers and parents'] },
-      { id: 'cap', team: 'Learning', title: 'Curriculum and Assessment Lead, CAP Engine', loc: 'Remote (US)', where: 'Remote (US)', type: 'Full-time', pay: '$135k–$170k · 0.2–0.5%', note: US,
+      { id: 'cap', team: 'Learning', title: 'Curriculum and Assessment Lead, CAP Engine', loc: 'Remote (US)', where: 'Remote (US)', type: 'Full-time', pay: 'USD range shared early · 0.2–0.5%', note: US,
         about: 'Build the content, assessment and pedagogy graphs that let Vachuo teach every standard at every level.',
         do: ['Map standards across the US, Kenya CBC and IB into one graph', 'Write and validate diagnostic items and misconception probes', 'Lead a network of subject-matter experts', 'Set quality bars for AI-generated items'],
         bring: ['5+ years in curriculum or assessment design', 'Experience with item writing and psychometrics', 'Classroom or tutoring experience', 'Systems thinking and attention to detail'] },
-      { id: 'design', team: 'Design', title: 'Founding Product Designer', loc: 'Palo Alto', where: 'Palo Alto or San Francisco, CA', type: 'Full-time', pay: '$160k–$200k · 0.3–0.7%', note: US,
+      { id: 'design', team: 'Design', title: 'Founding Product Designer', loc: 'Palo Alto', where: 'Palo Alto or San Francisco, CA', type: 'Full-time', pay: 'USD range shared early · 0.3–0.7%', note: US,
         about: 'Shape how a child, a parent and a guide experience an AI school, from the first sign-in to the Portfolio.',
         do: ['Lead design across learner, parent and guide products', 'Run research with families in the US and Kenya', 'Build and own the Vachuo design system', 'Prototype quickly and test with real learners'],
         bring: ['5+ years designing consumer or education products', 'A portfolio showing craft and clear thinking', 'Experience designing for children or families', 'Accessibility as a habit, not a checklist'] },
-      { id: 'tns', team: 'Safety', title: 'Child Safety and Privacy Lead', loc: 'Palo Alto', where: 'Palo Alto, CA · Hybrid', type: 'Full-time', pay: '$160k–$200k · 0.25–0.5%', note: US,
+      { id: 'tns', team: 'Safety', title: 'Child Safety and Privacy Lead', loc: 'Palo Alto', where: 'Palo Alto, CA · Hybrid', type: 'Full-time', pay: 'USD range shared early · 0.25–0.5%', note: US,
         about: 'Own safeguarding across the product and Connects, and make privacy a feature families can see.',
         do: ['Run COPPA, GDPR, Kenya DPA and AI Act compliance', 'Design vetting for guides, hosts and mentors', 'Lead incident response and safeguarding escalations', 'Publish transparency reports'],
         bring: ['5+ years in trust and safety, privacy or child protection', 'Working knowledge of children’s privacy law', 'Calm judgement under pressure', 'Experience with education or youth services'] },
-      { id: 'growth', team: 'Growth', title: 'Homeschool Community and Growth Lead', loc: 'Remote (US)', where: 'Remote (US)', type: 'Full-time', pay: '$120k–$155k · 0.15–0.4%', note: US,
+      { id: 'growth', team: 'Growth', title: 'Homeschool Community and Growth Lead', loc: 'Remote (US)', where: 'Remote (US)', type: 'Full-time', pay: 'USD range shared early · 0.15–0.4%', note: US,
         about: 'Earn the trust of homeschooling families and co-ops, and grow Vachuo through the people who use it.',
         do: ['Build partnerships with co-ops, microschools and parent groups', 'Run the Weekly Forum and community programmes', 'Own activation and referral experiments', 'Bring family feedback into the product every week'],
         bring: ['4+ years in community, growth or partnerships', 'Deep respect for homeschooling families', 'Comfort with data and experiments', 'Homeschooling experience is a plus'] },
@@ -507,16 +507,6 @@ class Component extends DCLogic {
         { title: 'Evidence over hype', text: 'We measure learning, publish what we find and change course when the data says so.', img: 'assets/img/d2a1b6a6b98dc6c01a65bc72956a63ce.svg', tint: '#FEF1D9' },
         { title: 'Humans where they matter', text: 'AI does instruction and operations. People do motivation, mentorship and judgement.', img: 'assets/img/1a0229fd1c0c8a82776eb70e3bac6e43.svg', tint: '#DDF4F1' },
         { title: 'Small steps, shipped', text: 'We work in short loops, like the one we build: try, observe, assess, improve, repeat.', img: 'assets/img/869eb9b1ab4934c59b2cb32140b0c0e8.svg', tint: '#E4ECFD' }
-      ],
-      benefits: [
-        { t: 'Meaningful equity', d: 'Every full-time teammate owns part of what we build.' },
-        { t: 'Health cover', d: 'Medical, dental and vision in the US; comprehensive medical cover in Kenya.' },
-        { t: '16 weeks parental leave', d: 'Fully paid, for every parent, however your family grows.' },
-        { t: '$2,000 learning budget', d: 'Every year, for courses, books and conferences.' },
-        { t: 'Flexible hybrid work', d: 'Studios in Palo Alto and Nairobi, with remote roles where they work.' },
-        { t: 'Five weeks off', d: 'Twenty-five days of leave plus local public holidays.' },
-        { t: 'Home office setup', d: 'A one-off stipend for a desk, chair and the right equipment.' },
-        { t: 'A week together', d: 'The whole team meets once a year, alternating between Nairobi and the Bay Area.' }
       ],
       steps: [
         { n: '01', t: 'Apply', d: 'A short form. We read every application and reply within 10 working days.' },

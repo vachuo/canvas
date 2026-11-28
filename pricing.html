@@ -222,7 +222,7 @@ html.rv-on [data-rv]:not([data-shown]){opacity:0;transform:translateY(28px)}
 <p style="margin: 0; font-size: 19px; line-height: 1.55; color: #DCE6FD">No card needed for Explore. Family plans start with a 14-day trial, and you can cancel any time.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
 <a href="sign-in.html" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 999px; background: #FFFFFF; color: #1E40AF; font-family: Inter, system-ui, sans-serif; font-size: 15.5px; font-weight: 600; text-decoration: none">Start free</a>
-<a href="mailto:partnerships@vachuo.com" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 999px; border: 1px solid #7FA2EE; color: #FFFFFF; font-family: Inter, system-ui, sans-serif; font-size: 15.5px; font-weight: 500; text-decoration: none">Talk to us about schools</a>
+<a href="mailto:partners@vachuo.com" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 22px; border-radius: 999px; border: 1px solid #7FA2EE; color: #FFFFFF; font-family: Inter, system-ui, sans-serif; font-size: 15.5px; font-weight: 500; text-decoration: none">Talk to us about schools</a>
 </div>
 </div>
 <div aria-hidden="true" style="position: relative; flex: 0 1 220px; width: 220px; max-width: 62%; margin: 0 auto calc(-1 * clamp(28px, 5vw, 56px)); display: flex; flex-direction: column; align-items: center; gap: 6px">
@@ -439,7 +439,7 @@ class Component extends DCLogic {
         features: ['Everything in Family', 'A named guide, 2 sessions a month', 'Quarterly progress review', 'Transcript and portfolio support', 'Priority mentor matching', 'Priority support'] }),
       Object.assign({}, light, { hid: 'p-micro', name: 'Microschool', for: 'For tutors, pods and microschools.', price: r.f(per(r.micro)), unit: '/ learner / month', note: 'Minimum 5 learners · ' + (yearly ? 'billed yearly' : 'billed monthly'), cta: 'Start a pilot', href: 'checkout.html', popular: false,
         features: ['Guide dashboard for every learner', 'Cohort planning and grouping', 'Attendance, records and reports', 'Parent Copilot for each family', 'Roster import and billing tools'] }),
-      Object.assign({}, light, { hid: 'p-systems', name: 'Schools & systems', for: 'Districts, networks and governments.', price: 'Custom', unit: '', note: 'Annual agreements', cta: 'Talk to us', href: 'mailto:partnerships@vachuo.com', popular: false,
+      Object.assign({}, light, { hid: 'p-systems', name: 'Schools & systems', for: 'Districts, networks and governments.', price: 'Custom', unit: '', note: 'Annual agreements', cta: 'Talk to us', href: 'mailto:partners@vachuo.com', popular: false,
         features: ['SSO, OneRoster and LTI integration', 'Teacher-to-guide transition support', 'System dashboards and outcome reports', 'Data residency, DPA and DPIA support', 'Implementation, training and SLA'] })
     ];
     const L = this.state.learners;
